@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="cvstyle.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 style="color: black;">Resume.com</h1>
+    </nav>
+  </header>
+  <main>
+    <h1 class="heading">add your details</h1>
+    <div class="details">
+      <div class="show" id="show1">
+        <h1>persnol info</h1>
+      </div>
+      <div class="hide" id="hide1">
+        <form action="" class="person">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+          <label for="name">Email</label>
+          <input type="text" name="name" id="Email" required />
+          <label for="name">Phone number</label>
+          <input type="text" name="name" id="Phonenumber" required />
+          <button type="button" onclick="person()">submit</button>
+        </form>
+      </div>
+
+      <div class="show" id="show2">
+        <h1>Education</h1>
+      </div>
+      <div class="hide" id="hide2">
+        <form action="" class="person">
+          <label for="name">Education</label>
+          <input type="text" name="name" id="education" required />
+          <label for="name">City</label>
+          <input type="text" name="name" id="city" required />
+          <label for="name">Starting Date</label>
+          <input type="date" name="name" id="EDsDate" required />
+          <label for="name">Ending Date</label>
+          <input type="date" name="name" id="EDeDate" required />
+          <label for="name">Description</label>
+          <textarea type="text" rows="6" id="des" required></textarea>
+          <button type="button" onclick="abd()">submit</button>
+
+        </form>
+      </div>
+      <div class="show" id="show3">
+        <h1>Employment</h1>
+      </div>
+      <div class="hide" id="hide3">
+        <form action="" class="person">
+          <label for="name">Postion</label>
+          <input type="text" name="name" id="pos" required />
+          <label for="name">Company</label>
+          <input type="text" name="name" id="Company" required />
+          <label for="name">City</label>
+          <input type="text" name="name" id="ecity" required />
+          <label for="name">Starting Date</label>
+          <input type="date" name="name" id="EsDate" required />
+          <label for="name">Ending Date</label>
+          <input type="date" name="name" id="EeDate" required />
+          <label for="name">Description</label>
+          <textarea type="text" rows="6" id="edes" required></textarea>
+          <button type="button" onclick="job()">submit</button>
+
+        </form>
+      </div>
+      <div class="show" id="show4">
+        <h1>Skills</h1>
+      </div>
+      <div class="hide" id="hide4">
+        <form action="" class="person">
+          <label for="name">Skill</label>
+          <input type="text" name="name" id="skill" required />
+          <label for="name">Level</label>
+          <input type="text" name="level" placeholder="Beg|Med|Adv" id="level" required />
+          <button type="button" onclick="skills()">submit</button>
+
+        </form>
+      </div>
+      <div class="show" id="show5">
+        <h1>languages</h1>
+      </div>
+      <div class="hide" id="hide5">
+        <form action="" class="person">
+          <label for="name">Language</label>
+          <input type="text" name="name" id="language" required />
+          <label for="name">Level</label>
+          <input type="text" name="name" placeholder="Beg|Med|Adv" id="Llevel" required />
+          <button type="button" onclick="abc()">submit</button>
+
+        </form>
+      </div>
+    </div>
+
+    <button class="pre" onclick=" renderResume()" id="pre">Preview</button>
+    <div id="preview">
+
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

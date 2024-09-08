@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+  height: 50px;
+  z-index: 2;
+  font-family: poppins;
+}
+.navbar {
+  display: flex;
+  padding-left: 30px;
+  padding-top: 10px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+main {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: Poppins;
+  margin-bottom: 40px;
+}
+.show {
+  padding-left: 40px;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.person {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 20px;
+}
+.person input {
+  width: 250px;
+  height: 25px;
+}
+.person label {
+  font-weight: 600;
+}
+.person textarea {
+  width: 250px;
+}
+.person button {
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 3px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  color: rgb(7, 20, 43);
+  background-color: rgb(255, 200, 94);
+
+  cursor: pointer;
+}
+.hide {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  opacity: 0;
+}
+.shows {
+  max-height: 100vh;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pre {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(37, 88, 175);
+  transition: 0.5s;
+  cursor: pointer;
+}
+@page {
+  size: A4;
+  margin: 1cm;
+}
+
+.cv-container {
+  width: 210mm; /* A4 width */
+  height: 297mm; /* A4 height */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 10PX;
+  font-size: 12px;
+  overflow-y: auto;/* add scrollbar if content exceeds page height */
+  border: 1px solid black;
+}
+
+.headers {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  height: 100px; /* set header height to 100px */
+  margin-bottom: 0; /* remove gap between header and sections */
+}
+
+.headers h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.headers p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hello{
+  display: grid; /* add grid layout to sections */
+  grid-template-rows: 1fr 1fr; /* one row */
+  grid-auto-flow: column; /* make items flow into columns */
+  grid-gap: 20px; /* gap between items */
+  margin-top: 20px; /* add gap between header and sections */
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 0; /* remove margin top */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
